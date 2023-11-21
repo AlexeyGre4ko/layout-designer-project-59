@@ -15,7 +15,7 @@ const svgSprite = require('gulp-svg-sprite');
 const fonter = require('gulp-fonter');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
-function fonts {
+function fonts() {
     return src('app/fonts/src/*.*')
     .pipe(fonter({
         formats: ['woff', 'ttf']
@@ -42,7 +42,7 @@ function images() {
 }
 
 function sprite() {
-    return src('app/images/build/*.svg')
+    return src('app/images/*.svg')
     .pipe(svgSprite({
         mode: {
             stack: {
@@ -51,7 +51,7 @@ function sprite() {
             }
         }
     }))
-    .pipe(dest('app/images/build'))
+    .pipe(dest('app/images'))
 }
 
 function styles() {
@@ -90,6 +90,9 @@ function building() {
     return src([
         'app/css/style.min.css',
         'app/images/build/*.*',
+        '!app/images/build/*.svg',
+        'app/images/build/sprite.svg',
+        'app/fonts/*.*',
         'app/**/*.html'
     ], {base : 'app'})
     .pipe(dest('build'))
