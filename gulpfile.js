@@ -4,11 +4,11 @@ const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const gulppug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
-const autoprefixer = require('gulp-autoprefixer');
+
 const clean = require('gulp-clean');
 const { version } = require('gulp-cli/lib/shared/cli-options');
 const avif = require('gulp-avif');
-const webp = require('gulp-webp');
+
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const svgSprite = require('gulp-svg-sprite');
@@ -56,7 +56,6 @@ function sprite() {
 
 function styles() {
     return src('app/styles/style.scss')
-    .pipe(autoprefixer({ overrideBrowserslist: ['last 10 version']}))
     .pipe(concat('style.min.css'))
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(dest('app/css'))
