@@ -88,10 +88,7 @@ function cleanBuild() {
 function building() {
     return src([
         'app/css/style.min.css',
-        'app/images/build/*.*',
-        '!app/images/build/*.svg',
-        'app/images/build/sprite.svg',
-        'app/fonts/*.*',
+
         'app/**/*.html'
     ], {base : 'app'})
     .pipe(dest('build'))
