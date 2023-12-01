@@ -5,10 +5,12 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Index
 
-        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous")
-        link(rel='stylesheet' href='css/style.min.css')
+
+        link(href='/app/bootstrap/bootstrap.css' rel='stylesheet')
+        link(href='../css/style.min.css' rel='stylesheet')
+
     body
-        .container-xxl.py-3.px-3.bg-primary
+        .container-xxl.pt-5.px-4.bg-gray.w-100
             .bg-light.rounded-1
                 include includes/header.pug
                 include includes/left.pug
