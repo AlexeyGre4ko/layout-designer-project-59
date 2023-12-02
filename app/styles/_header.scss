@@ -1,0 +1,24 @@
+.header {
+    border-top-left-radius: 1rem;
+    display: flex;
+    gap: 28px;
+
+    .logo {
+        padding: 16px 0 16px 16px;
+    }
+
+    nav {
+        padding-top: 24px;
+
+        ul {
+            display: flex;
+            padding-left: 0;
+            gap: 32px;
+
+            li {
+                list-style-type: none;
+            }
+
+        }
+    }
+}

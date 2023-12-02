@@ -1,1 +1,1 @@
-.main{padding:0}.main .inner{margin:5px}
+.header{border-top-left-radius:1rem;display:flex;gap:28px}.header .logo{padding:16px 0 16px 16px}.header nav{padding-top:24px}.header nav ul{display:flex;padding-left:0;gap:32px}.header nav ul li{list-style-type:none}body{height:1176px}.main{padding:0}.main .inner{margin:5px}

@@ -1,8 +1,6 @@
 @import "_variables.scss";
+@import "_header.scss";
 
-.main {
-    padding: 0;
-    .inner {
-        margin: 5px;
-    }
+body {
+    height: 1176px;
 }
