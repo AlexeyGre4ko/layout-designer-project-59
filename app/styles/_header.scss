@@ -18,7 +18,24 @@
             li {
                 list-style-type: none;
             }
-
+            li:first-child::after {
+                content: "Контакты";
+                color: (var(--bs-light));
+                padding-left: 8px;
+                font-size: 14px;
+            }
+            li:nth-child(2)::after {
+                content: "Сообщения";
+                color: (var(--bs-light));
+                padding-left: 8px;
+                font-size: 14px;
+            }
+            li:last-child::after {
+                content: "Профиль";
+                color: (var(--bs-light));
+                padding-left: 8px;
+                font-size: 14px;
+            }
         }
     }
 }
