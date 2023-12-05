@@ -11,7 +11,9 @@ html(lang="en")
 
     body
         .container-xxl.pt-5.px-4.bg-gray.w-100.h-100
-            .bg-light.rounded-4
-                include includes/header.pug
-                include includes/left.pug
-                include includes/right.pug
+            .bg-light.rounded-4.row.h-100.m-0
+                .col-4.p-0
+                    include includes/header.pug
+                    include includes/left.pug
+                .col-8.h-100.p-0.d-flex.justify-content-center.pt-50.bg-white.rounded-4
+                    include includes/right.pug
