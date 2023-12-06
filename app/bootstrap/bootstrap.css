@@ -7555,6 +7555,11 @@ textarea.form-control-lg {
   border-left: 0 !important;
 }
 
+.border-grey {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-grey-rgb), var(--bs-border-opacity)) !important;
+}
+
 .border-primary {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-primary-rgb), var(--bs-border-opacity)) !important;
