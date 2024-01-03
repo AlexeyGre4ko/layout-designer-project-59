@@ -23,6 +23,8 @@
 
             li {
                 list-style-type: none;
+                width: 25px;
+                height: 25px;
             }
             li:first-child::after {
                 content: "Контакты";
@@ -35,6 +37,39 @@
             li:last-child::after {
                 content: "Профиль";
                 @extend %c_p_f;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        border-radius: 0;
+
+        .logo {
+            padding: 24px 0 23px 21px;
+
+            img {
+                width: 15px;
+                height: 25px;
+            }
+        }
+
+        nav {
+
+            ul {
+                padding-left: 155px;
+                gap: 40px;
+
+                li:first-child::after {
+                    content: "";
+                }
+                li:nth-child(2)::after {
+                    content: "";
+                }
+                li:last-child::after {
+                    content: "";
+                }
             }
         }
     }
