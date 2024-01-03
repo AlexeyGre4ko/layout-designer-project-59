@@ -10,10 +10,10 @@ html(lang="en")
         link(href='../css/style.min.css' rel='stylesheet')
 
     body
-        .container-xxl.p-4.bg-gray.w-100.h-100
+        .wrapper.container-xxl.p-4.bg-gray.w-100.h-100
             .bg-light.rounded-4.row.h-100.m-0
-                .col-4.p-0.border-end.border-grey
+                .wrapper-left.col-4.p-0.border-end.border-grey
                     include includes/header.pug
                     include includes/left.pug
-                .col-8.h-100.p-0.d-flex.justify-content-center.pt-50.bg-light.rounded-4
+                .wrapper-right.col-8.h-100.p-0.d-flex.justify-content-center.pt-50.bg-light.rounded-4
                     include includes/right.pug

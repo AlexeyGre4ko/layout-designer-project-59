@@ -6,3 +6,18 @@
 body {
     height: 100%;
 }
+
+@media screen and (max-width: 414px) {
+    .wrapper {
+        max-width: 414px;
+        padding: 0;
+
+        .wrapper-left {
+            width: 414px;
+        }
+        .wrapper-right {
+            width: 0;
+            height: 0;
+        }
+    }
+}
