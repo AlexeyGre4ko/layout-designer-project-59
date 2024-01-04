@@ -20,11 +20,15 @@
             display: flex;
             padding-left: 0;
             gap: 32px;
+            max-width: 363px;
 
             li {
                 list-style-type: none;
-                width: 25px;
-                height: 25px;
+
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
             }
             li:first-child::after {
                 content: "Контакты";
