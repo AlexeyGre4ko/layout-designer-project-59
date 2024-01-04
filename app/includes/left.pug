@@ -9,7 +9,7 @@
         a.text-muted(href= "/" + index + ".html")= index
         ul.menu_list.list-group-numbered.p-0.mt-3.mb-5
             each user in value
-                .contact
+                a.contact(href= "#")
                     li
                         img(src= user.avatar)
                     li.name= user.name
