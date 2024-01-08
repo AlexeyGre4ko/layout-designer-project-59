@@ -2,6 +2,7 @@ const {src, dest, watch, parallel, series} = require('gulp');
 
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
+const uglify = require('gulp-uglify-es').default;
 const gulppug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 
@@ -41,6 +42,16 @@ function images() {
     .pipe(dest('app/images/build'))
 }
 
+function scripts() {
+    return src([
+        'app/js/main.js',
+    ])
+    .pipe(concat('main.min.js'))
+    .pipe(uglify())
+    .pipe(dest('app/js'))
+    .pipe(browserSync.stream())
+}
+
 function sprite() {
     return src('app/images/*.svg')
     .pipe(svgSprite({
@@ -78,6 +89,7 @@ function watching() {
     watch(['app/styles/style.scss'], styles)
     watch(['app/images/src'], images)
     watch(['app/*.pug'], pug)
+    watch(['app/js/main.js'], scripts)
 }
 
 function cleanBuild() {
@@ -88,12 +100,14 @@ function cleanBuild() {
 function building() {
     return src([
         'app/css/style.min.css',
-        'app/**/*.html'
+        'app/**/*.html',
+        'app/js/maim.min.js'
     ], {base : 'app'})
     .pipe(dest('build'))
 }
 
 exports.styles = styles;
+exports.scripts = scripts;
 exports.fonts = fonts;
 exports.images = images;
 exports.sprite = sprite;
@@ -101,4 +115,4 @@ exports.pug = pug;
 exports.watching = watching;
 exports.build = series(cleanBuild, building)
 
-exports.default = parallel(styles, images, pug, watching);
+exports.default = parallel(styles, scripts, images, pug, watching);

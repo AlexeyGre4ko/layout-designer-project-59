@@ -1,0 +1,14 @@
+.left.profile.h-85.bg-light.p-4
+    h1.py-4.m-0 Контакты
+    .search.py-4.ps-4
+        form.search__form(action='/')
+        input.input.input_radius.search__input(type="search" name="search" placeholder="Поиск по контактам")
+    each value, index in {'A': [{name: "Алексей Примадонин", status: "Онлайн", avatar: "/app/images/src/avatar_3.jpg"}], 'В': [{name: "Вениамин Редакторович", status: "Онлайн", avatar: "/app/images/src/avatar_4.jpg"}], 'Д': [{name: "Джедай Падаванов", status: "Был онлайн вчера", avatar: "/app/images/src/avatar_2.jpg"}], 'К': [{name: "Кодовёнок Хекслетович", status: "Был онлайн 3 часа назад", avatar: "/app/images/src/avatar_1.jpg"}, {name: "Королева Верстальщина", status: "Была онлайн вчера", avatar: "/app/images/src/avatar_5.jpg"}], 'П': [{name: "Питонист Джангович", status: "Был онлайн вчера", avatar: "/app/images/src/avatar_5.jpg"}],}
+        a.text-muted(href= "/" + index + ".html")= index
+        ul.menu_list.list-group-numbered.p-0.mt-3.mb-5
+            each user in value
+                a.contact(href= "#")
+                    li
+                        img(src= user.avatar)
+                    li.name= user.name
+                    li.status= user.status
