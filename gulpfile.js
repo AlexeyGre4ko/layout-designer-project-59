@@ -101,7 +101,7 @@ function building() {
     return src([
         'app/css/style.min.css',
         'app/**/*.html',
-        'app/js/maim.min.js'
+        'app/js/main.min.js'
     ], {base : 'app'})
     .pipe(dest('build'))
 }

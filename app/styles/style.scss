@@ -13,6 +13,20 @@ body {
     }
 }
 
+.contacts {
+    display: none;
+}
+.messages {
+    display: none;
+}
+.profile {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+
 @media screen and (max-width: 414px) {
     body {
 
