@@ -7,19 +7,19 @@ const messages = document.querySelector('.messages');
 const profile = document.querySelector('.profile');
 
 people.addEventListener('click', ()=>{
-    contacts.classList.toggle('active');
+    contacts.classList.add('active');
     messages.classList.remove('active');
     profile.classList.remove('active');
 });
 
 chat.addEventListener('click', ()=>{
     contacts.classList.remove('active');
-    messages.classList.toggle('active');
+    messages.classList.add('active');
     profile.classList.remove('active');
 });
 
 person.addEventListener('click', ()=>{
     contacts.classList.remove('active');
     messages.classList.remove('active');
-    profile.classList.toggle('active');
+    profile.classList.add('active');
 });
