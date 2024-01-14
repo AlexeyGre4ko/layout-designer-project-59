@@ -8,16 +8,17 @@ html(lang="en")
 
         link(href='/app/bootstrap/bootstrap.css' rel='stylesheet')
         link(href='../css/style.min.css' rel='stylesheet')
+        script(type='text/javascript' defer src='../bootstrap/bootstrap.min.js')
 
     body
         .wrapper.container-xxl.bg-gray.w-100.h-100
             .bg-light.rounded-4.row.h-100.m-0
                 .wrapper-left.col-4.p-0.border-end.border-grey
-                    include includes/header.pug
+                    include includes/header_1.pug
                     include includes/left-contacts.pug
                     include includes/left-messages.pug
                     include includes/left-profile.pug
                 .wrapper-right.col-8.h-100.p-0.d-flex.justify-content-center.pt-50.bg-light.rounded-4
                     include includes/right.pug
         script
-            include js/main.min.js
+            include bootstrap/bootstrap.min.js

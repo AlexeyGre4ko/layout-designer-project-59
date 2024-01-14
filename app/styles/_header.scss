@@ -2,6 +2,8 @@
     color: (var(--bs-light));
     font-size: 14px;
     padding-left: 8px;
+    height: 21px;
+    padding-top: 4px;
 }
 
 .header {
@@ -24,11 +26,20 @@
 
             li {
                 list-style-type: none;
+                max-width: 109px;
+                display: flex;
+                max-height: 25px;
 
-                img {
-                    width: 25px;
-                    height: 25px;
+                a {
+                    margin: 0;
+                    padding: 0;
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
                 }
+
             }
             li:first-child::after {
                 content: "Контакты";
@@ -46,7 +57,7 @@
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
     .header {
         border-radius: 0;
 

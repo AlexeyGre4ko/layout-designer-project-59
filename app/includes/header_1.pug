@@ -1,0 +1,14 @@
+header.header.h-15.bg-primary
+    .logo
+        img(src="/app/images/src/Logo.png", alt="logo hexlet")
+    nav.menu
+        ul.menu_list.nav#myTab(role="tablist")
+            li.list_item.people(role="presentation")
+                a(href="#").active#profile-tab(data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true")
+                    img(src="/app/images/src/people_2.png", alt="contacts")
+            li.list_item.chat.nav-item(role="presentation")
+                a(href="#").nav-link#messages-tab(data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false")
+                    img(src="/app/images/src/chat_2.png", alt="masseges")
+            li.list_item.person.nav-item(role="presentation")
+                a(href="#").nav-link#settings-tab(data-bs-toggle="tab" data-bs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false")
+                    img(src="/app/images/src/person_2.png", alt="profile")

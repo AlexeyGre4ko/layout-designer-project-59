@@ -14,7 +14,15 @@
 
 .left {
     height: 1056px;
-    overflow: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
 
     h1 {
         color: #212529;
