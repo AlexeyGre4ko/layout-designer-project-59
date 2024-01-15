@@ -63,6 +63,19 @@
             justify-content: center;
             align-content: start;
 
+            &:hover {
+                background-color: var(--Primary, #4545A5);
+                color: var(--Light, #FBFBFB);
+
+                .name {
+                    color: var(--Light, #FBFBFB);
+                }
+
+                .status {
+                    color: var(--Gray, #EFEFEF);
+                }
+            }
+
             li {
                 width: 90px;
 
