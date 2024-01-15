@@ -19,7 +19,7 @@
     overflow-y: auto;
     overflow-x: hidden;
 
-    ::-webkit-scrollbar {
+    &::-webkit-scrollbar {
         display: none;
     }
 
