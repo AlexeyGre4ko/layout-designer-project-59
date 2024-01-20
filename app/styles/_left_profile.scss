@@ -13,21 +13,26 @@
         border-radius: 50%;
     }
 
-    .profile_name {
-        margin-top: 8px;
-        font-weight: 700;
-        font-style: normal;
-    }
+    .card-body {
 
-    .profile_discr {
-        margin: 24px 40px 40px;
-        text-align: center;
-        color: var(--Black-50, rgba(0, 0, 0, 0.50));
+        .profile_name {
+            margin-top: 8px;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+        }
+
+        .profile_discr {
+            margin: 24px 40px 40px;
+            text-align: center;
+            color: var(--Black-50, rgba(0, 0, 0, 0.50));
+        }
     }
 }
 
 .list {
     margin-top: 48px;
+    margin-left: 16px;
 
     .profile-item {
         box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
@@ -37,12 +42,13 @@
         justify-content: space-between;
         margin-bottom: 8px;
         padding-right: 21px;
-        padding-bottom: 8px;
+        padding-bottom: 0;
+        padding-left: 15px;
         height: 58px;
         font-size: 14px;
         font-family: 'Roboto';
 
-        li {
+        .info {
             height: 42px;
 
             p:first-child {
@@ -85,13 +91,16 @@
                 margin-top: 16px;
             }
 
-            .profile_name {
-                margin-top: 16px;
-            }
+            .card-body {
 
-            .profile_discr {
-                margin-top: 0;
-                margin-bottom: 16px;
+                .profile_name {
+                    margin-top: 16px;
+                }
+
+                .profile_discr {
+                    margin-top: 0;
+                    margin-bottom: 16px;
+                }
             }
         }
 
