@@ -7,7 +7,6 @@
 }
 
 .header {
-    border-top-left-radius: 1rem;
     display: flex;
     gap: 28px;
 
@@ -59,7 +58,7 @@
 
 @media screen and (max-width: 415px) {
     .header {
-        border-radius: 0;
+        border-radius: 0 !important;
 
         .logo {
             padding: 24px 0 23px 21px;
