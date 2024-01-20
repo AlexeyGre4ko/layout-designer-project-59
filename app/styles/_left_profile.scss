@@ -38,19 +38,68 @@
         margin-bottom: 8px;
         padding-right: 21px;
         padding-bottom: 8px;
-        height: 50px;
+        height: 58px;
+        font-size: 14px;
+        font-family: 'Roboto';
 
         li {
             height: 42px;
 
+            p:first-child {
+                color: var(--Black-50, rgba(0, 0, 0, 0.50));
+            }
+
             p {
             margin: 0;
             height: 21px;
+            color: #212529;
             }
         }
 
         .svg-logo {
             margin-top: 21px;
+            color: var(--Black-50, rgba(0, 0, 0, 0.50));
+        }
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .left {
+
+        h1 {
+            font-size: 25px;
+        }
+
+        .search {
+            .input {
+                height: 24px;
+            }
+        }
+
+        .card {
+            margin-top: 64px;
+            height: 250px;
+
+            img {
+                margin-top: 16px;
+            }
+
+            .profile_name {
+                margin-top: 16px;
+            }
+
+            .profile_discr {
+                margin-top: 0;
+                margin-bottom: 16px;
+            }
+        }
+
+        .list {
+
+            .profile-item {
+                margin-bottom: 0;
+            }
         }
     }
 }
