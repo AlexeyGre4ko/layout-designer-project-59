@@ -38,18 +38,23 @@
         .answer {
             display: flex;
             padding-left: 48px;
-            max-width: 662px;
 
             img {
                 height: 50px;
                 display: flex;
                 align-self: flex-end;
+                border-radius: 50%;
             }
 
             ul {
                 list-style-type: none;
                 margin: 0 0 0 16px;
                 padding: 24px;
+                max-width: 558px;
+                max-height: 158px;
+                border-radius: 16px;
+                background: var(--Light, #FBFBFB);
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
                 .chat_name {
                     color: var(--Dark, #343A40);
                     font-size: 16px;
@@ -57,12 +62,13 @@
                     font-weight: 700;
                 }
                 .chat_text {
-
+                    margin-top: 4px;
                 }
                 .chat_status {
                     color: var(--Secondary, #6C757D);
                     font-size: 14px;
                     font-family: "Roboto";
+                    margin-top: 13px;
                 }
             }
         }
@@ -75,18 +81,53 @@
                 height: 50px;
                 display: flex;
                 align-self: flex-end;
+                border-radius: 50%;
             }
 
             ul {
                 list-style-type: none;
                 margin: 0 0 0 16px;
                 padding: 24px;
+                max-width: 557px;
+                max-height: 130px;
+                border-radius: 16px;
+                background: var(--Primary, #4545A5);
                 .chat_text {
-
+                    color: var(--Light, #FBFBFB);
+                    font-family: Roboto;
+                    font-size: 16px;
                 }
                 .chat_status {
-
+                    font-size: 14px;
+                    font-family: "Roboto";
+                    margin-top: 13px;
+                    color: rgba(255, 255, 255, 0.60);
+                    border-top: 1px solid rgba(239, 239, 239, 0.60);
                 }
+            }
+        }
+    }
+    .write_message {
+        margin: 64px 49px 0 48px;
+        padding: 20px 24px;
+        border-top: 1px solid #EFEFEF;
+        background: #FFF;
+        height: 89px;
+
+        .input-group {
+
+            input{
+                height: 24px;
+                width: 178px;
+                margin-top: 12px;
+                padding: 0;
+            }
+            button {
+                width: 50px;
+                height: 50px;
+                border-radius: 50% !important;
+                background-color: var(--Primary, #4545A5);
+                margin-left: 555px !important;
             }
         }
     }
