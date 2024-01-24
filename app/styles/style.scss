@@ -24,13 +24,16 @@ body {
     display: none;
 }
 .right_messages {
-    display: block;
+    display: flex;
 }
 .cont_link {
     display: none;
 }
 .active {
     display: block;
+}
+.wrapper-right {
+    height: 1128px;
 }
 
 
