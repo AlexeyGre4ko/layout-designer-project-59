@@ -149,5 +149,56 @@
 }
 
 @media screen and (max-width: 415px) {
-    
+    .chat_main {
+        padding: 0 48px 48px 48px;
+        .answer {
+            padding: 0 8px 0 0 !important;
+
+
+            img {
+                display: none !important;
+            }
+
+            ul {
+                margin: 0 !important;
+                max-height: 100% !important;
+            }
+
+        }
+
+        .chat_message {
+            padding: 0 !important;
+
+            img {
+                display: none !important;
+            }
+
+            ul {
+                margin: 0 !important;
+                max-height: 100% !important;
+                padding-right: 8px !important;
+                width: 100% !important;
+            }
+
+        }
+    }
+    .write_message {
+        margin: 0 !important;
+        padding: 15px 16px 15px 32px !important;
+
+        .input-group {
+
+            input {
+                height: 28px !important;
+                margin-top: 7px !important;
+            }
+
+            button {
+                width: 42px !important;
+                height: 42px !important;
+                padding: 7px 9px 8px 9px !important;
+
+            }
+        }
+    }
 }
