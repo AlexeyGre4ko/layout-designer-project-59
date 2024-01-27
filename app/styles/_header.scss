@@ -62,6 +62,10 @@
 @media screen and (max-width: 415px) {
     .header {
         border-radius: 0 !important;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
 
         .logo {
             padding: 24px 0 23px 21px;
