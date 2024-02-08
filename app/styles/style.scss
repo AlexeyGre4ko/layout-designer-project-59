@@ -7,10 +7,17 @@
 @import "_utilities.scss";
 @import "_right_messages.scss";
 body {
-    height: 100%;
-
     .wrapper {
         padding: 1.5rem;
+        max-height: 900px;
+
+        .wrapper-main {
+            max-height: 900px;
+
+            .wrapper-left {
+                max-height: 900px;
+            }
+        }
     }
 }
 
