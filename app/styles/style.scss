@@ -45,17 +45,18 @@ body {
             max-height: 896px;
             padding: 0;
             overflow: hidden;
+            max-height: 900px;
 
             .wrapper-left {
                 width: 414px;
                 display: flex;
                 flex-direction: column-reverse;
-                max-height: 896px;
+                max-height: 852px;
                 overflow: hidden;
                 border-bottom-left-radius: 1rem;
             }
             .wrapper-right {
-                max-height: 824px;
+                max-height: 852px;
             }
         }
     }
