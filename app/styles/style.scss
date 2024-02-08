@@ -12,10 +12,10 @@ body {
         max-height: 900px;
 
         .wrapper-main {
-            max-height: 900px;
+            max-height: 852px;
 
             .wrapper-left {
-                max-height: 900px;
+                max-height: 852px;
             }
         }
     }
@@ -40,7 +40,7 @@ body {
     display: block;
 }
 .wrapper-right {
-    height: 1128px;
+    max-height: 852px;
 }
 
 
