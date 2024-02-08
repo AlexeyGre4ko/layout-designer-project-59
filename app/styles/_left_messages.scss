@@ -18,6 +18,7 @@
     scrollbar-width: none;
     overflow-y: auto;
     overflow-x: hidden;
+    border-bottom-left-radius: 1rem;
 
     &::-webkit-scrollbar {
         display: none;
