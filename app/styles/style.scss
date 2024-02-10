@@ -57,13 +57,12 @@ body {
                 width: 414px;
                 display: flex;
                 flex-direction: column-reverse;
-                max-height: 852px;
                 overflow: hidden;
                 border-bottom-left-radius: 1rem;
                 max-height: 955px;
 
                 .left {
-                    max-height: 955px;
+                    max-height: 950px;
                 }
 
             }
