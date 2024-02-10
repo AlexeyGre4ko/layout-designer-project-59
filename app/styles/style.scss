@@ -53,21 +53,24 @@ body {
             overflow: hidden;
             max-height: 990px;
 
-            .wrapper-left {
-                width: 414px;
-                display: flex;
-                flex-direction: column-reverse;
-                overflow: hidden;
-                border-bottom-left-radius: 1rem;
-                max-height: 995px;
+            .wrapper-main {
+                max-height: 990px;
 
-                .left {
-                    max-height: 990px;
+                .wrapper-left {
+                    width: 414px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    overflow: hidden;
+                    border-bottom-left-radius: 1rem;
+                    max-height: 995px;
+
+                    .left {
+                        max-height: 990px;
+                    }
                 }
-
-            }
-            .wrapper-right {
-                max-height: 852px;
+                .wrapper-right {
+                    max-height: 852px;
+                }
             }
         }
     }
