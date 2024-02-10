@@ -66,6 +66,7 @@
         bottom: 0;
         right: 0;
         left: 0;
+        gap: 75px;
 
         .logo {
             padding: 24px 0 23px 21px;
@@ -87,7 +88,7 @@
                 }
 
                 li:first-child {
-                    display: block;
+                    display: none;
                 }
                 li:nth-child(2)::after {
                     content: "";
