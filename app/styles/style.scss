@@ -51,10 +51,10 @@ body {
             max-width: 414px;
             padding: 0;
             overflow: hidden;
-            max-height: 990px;
+            max-height: 900px;
 
             .wrapper-main {
-                max-height: 990px;
+                max-height: 900px;
 
                 .wrapper-left {
                     width: 414px;
@@ -62,10 +62,10 @@ body {
                     flex-direction: column-reverse;
                     overflow: hidden;
                     border-bottom-left-radius: 1rem;
-                    max-height: 995px;
+                    max-height: 900px;
 
                     .left {
-                        max-height: 990px;
+                        max-height: 900px;
                     }
                 }
                 .wrapper-right {
