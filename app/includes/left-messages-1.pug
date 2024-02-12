@@ -1,0 +1,16 @@
+.left.messages.active.tab-pane.h-85.bg-light.p-4(id="messages" role="tabpanel" aria-labelledby="messages-tab")
+    h1.py-4.m-0 Чаты
+    .search.py-4.ps-4
+        form.search__form(action='/')
+        input.input.input_radius.search__input(type="search" name="search" placeholder="Поиск по сообщениям")
+    each value, index in {'A': [{name: "Вениамин Редакторович", status: "o_O", time: "11:45", avatar: "images/src/avatar_3.jpg"}], 'В': [{name: "Джедай Падаванов", status: "Привет, скоро третий проект? Уже скоро надо будет выложить", time: "10:12", avatar: "images/src/avatar_4.jpg"}], 'Д': [{name: "Алексей Примадонин", status: "Тесты упали >_<", time: "08:53", avatar: "images/src/avatar_2.jpg"}],}
+        ul.menu_list.list-group-numbered.p-0.mt-3.mb-5
+            each user in value
+                a.messages(href= "#")
+                    li
+                        img(src= user.avatar)
+                    li.name-time
+                        .name= user.name
+                        .time= user.time
+                    li
+                        .status= user.status
