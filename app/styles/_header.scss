@@ -88,7 +88,7 @@
                 }
 
                 li:first-child {
-                    display: none;
+                    display: block;
                 }
                 li:nth-child(2)::after {
                     content: "";
