@@ -17,6 +17,9 @@ body {
             .wrapper-left {
                 max-height: 852px;
             }
+            .wrapper-right {
+                display: flex;
+            }
         }
     }
 }
@@ -72,7 +75,7 @@ body {
                     }
                 }
                 .wrapper-right {
-                    max-height: 852px;
+                    display: none;
                 }
             }
         }
