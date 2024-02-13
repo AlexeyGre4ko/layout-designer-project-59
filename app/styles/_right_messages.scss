@@ -1,7 +1,6 @@
 .right_messages {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     .chat_header {
         height: 94px;
@@ -41,7 +40,7 @@
         flex-direction: column;
         flex-grow: 10;
 
-        max-height: 600px;
+        max-height: 700px;
         -ms-overflow-style: none;
         scrollbar-width: none;
         overflow-y: auto;
