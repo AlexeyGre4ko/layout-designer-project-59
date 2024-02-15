@@ -4,7 +4,7 @@
         form.search__form(action='/')
         input.input.input_radius.search__input(type="search" name="search" placeholder="Поиск по сообщениям")
     each value, index in {'A': [{name: "Вениамин Редакторович", status: "o_O", time: "11:45", avatar: "images/src/avatar_3.jpg"}], 'В': [{name: "Джедай Падаванов", status: "Привет, скоро третий проект? Уже скоро надо будет выложить", time: "10:12", avatar: "images/src/avatar_4.jpg"}], 'Д': [{name: "Алексей Примадонин", status: "Тесты упали >_<", time: "08:53", avatar: "images/src/avatar_2.jpg"}],}
-        ul.menu_list.list-group-numbered.p-0.mt-3.mb-5
+        ul.menu_list.list-group-numbered.p-0.mt-3
             each user in value
                 a.messages_a(href= "#")
                     li
