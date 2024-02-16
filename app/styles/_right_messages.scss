@@ -177,7 +177,7 @@
             }
 
             .chat_message {
-                padding: 0 5px 0 0 !important;
+                padding: 0 !important;
 
                 img {
                     display: none !important;
@@ -193,8 +193,8 @@
                         padding-right: 17px;
                     }
                     .chat_status {
-                        margin-top: 11px;
-                        padding-top: 2px;
+                        margin-top: 9px;
+                        padding-top: 4px;
                     }
                 }
 
@@ -202,8 +202,9 @@
         }
         .write_message {
             margin: 0 !important;
-            padding: 15px 0 15px 0 !important;
-            height: 70px;
+            padding: 15px 0 15px 5px !important;
+            height: 67px;
+            width: 370px;
 
             .input-group {
 
