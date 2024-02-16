@@ -158,12 +158,13 @@
         }
 
         .chat_main {
-            padding-top: 0;
+            padding-top: 60px;
             padding-left: 22px;
             padding-right: 22px;
-            max-height: 610px;
+            max-height: 680px;
             .answer {
-                padding: 0 8px 0 0 !important;
+                padding: 0 1px 0 0 !important;
+                width: 325px;
 
                 img {
                     display: none !important;
@@ -176,7 +177,7 @@
             }
 
             .chat_message {
-                padding: 0 !important;
+                padding: 0 8px 0 0 !important;
 
                 img {
                     display: none !important;
@@ -187,13 +188,17 @@
                     max-height: 100% !important;
                     padding-right: 8px !important;
                     width: 100% !important;
+
+                    .chat_text {
+                        padding-right: 50px;
+                    }
                 }
 
             }
         }
         .write_message {
             margin: 0 !important;
-            padding: 15px 16px 15px 32px !important;
+            padding: 15px 0 15px 0 !important;
 
             .input-group {
 
