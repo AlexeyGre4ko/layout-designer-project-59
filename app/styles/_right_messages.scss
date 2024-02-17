@@ -154,17 +154,17 @@
         .chat_header {
             height: auto;
             margin-right: 0;
-            padding: 0 0 20px 0;
+            padding: 0 0 22px 0;
 
             ul {
-                margin: auto 0 auto 13px;
+                margin: auto 0 auto 18px;
             }
         }
 
         .chat_main {
             padding-top: 46px;
-            padding-left: 22px;
-            padding-right: 22px;
+            padding-left: 25px;
+            padding-right: 25px;
             max-height: 655px;
             .answer {
                 padding: 0 1px 0 0 !important;
@@ -211,7 +211,7 @@
         }
         .write_message {
             margin: 0 !important;
-            padding: 15px 0 15px 5px !important;
+            padding: 15px 5px 15px 10px !important;
             height: 67px;
             width: 370px;
 
