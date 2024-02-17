@@ -154,7 +154,7 @@
         .chat_header {
             height: auto;
             margin-right: 0;
-            padding: 0 0 20px 0;
+            padding: 0 0 20px 5px;
         }
 
         .chat_main {
@@ -191,13 +191,15 @@
 
                     .chat_text {
                         padding-right: 17px;
-                        color: rgba(108, 117, 125, 1);
+                        color: rgba(251, 251, 251, 1);
+
                         ;
                     }
                     .chat_status {
                         margin-top: 9px;
                         padding-top: 4px;
-                        color: rgba(108, 117, 125, 1);
+                        color: rgba(251, 251, 251, 1);
+
                     }
                 }
 
