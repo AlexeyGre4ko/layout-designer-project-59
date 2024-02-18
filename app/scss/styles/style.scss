@@ -1,0 +1,91 @@
+@import "_variables.scss";
+@import "_header.scss";
+@import "_left_contacts.scss";
+@import "_left_messages.scss";
+@import "_left_profile.scss";
+@import "_right.scss";
+@import "_utilities.scss";
+@import "_right_messages.scss";
+body {
+    .wrapper {
+        padding: 1.5rem;
+        max-height: 900px;
+
+        .wrapper-main {
+            max-height: 852px;
+
+            .wrapper-left {
+                max-height: 852px;
+            }
+            .wrapper-right {
+                display: flex;
+            }
+        }
+    }
+}
+
+.dialog {
+    display: none;
+    height: 896px;
+    padding: 22px 1rem;
+}
+.contacts {
+    display: none;
+    height: 900px;
+}
+.messages {
+    display: none;
+    height: 900px;
+}
+.profile {
+    display: none;
+}
+.right_messages {
+    display: flex;
+}
+.cont_link {
+    display: block;
+}
+.active {
+    display: block;
+}
+.wrapper-right {
+    max-height: 852px;
+}
+
+
+@media screen and (max-width: 415px) {
+    body {
+
+        .wrapper {
+            max-width: 414px;
+            padding: 0;
+            overflow: hidden;
+            max-height: 900px;
+
+            .wrapper-main {
+                max-height: 900px;
+
+                .wrapper-left {
+                    width: 414px;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    overflow: hidden;
+                    border-bottom-left-radius: 1rem;
+                    max-height: 900px;
+
+                    .left {
+                        max-height: 990px;
+                    }
+                }
+                .wrapper-right {
+                    display: none;
+                }
+            }
+        }
+    }
+    .cont_link {
+        display: none;
+    }
+
+}
