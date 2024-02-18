@@ -1,6 +1,2 @@
-{ "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
-"rules": {
-    "alpha-value-notation": "number",
-    "selector-class-pattern": null
-}
+{ "extends": ["stylelint-config-standard"]
 }
