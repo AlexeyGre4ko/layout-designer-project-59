@@ -1110,7 +1110,7 @@ $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
-$pagination-hover-border-color:     var(--#{$prefix}border-color) !default; // Todo in v6: remove this?
+$pagination-hover-border-color:     var(--#{$prefix}border-color) !default;
 
 $pagination-active-color:           $component-active-color !default;
 $pagination-active-bg:              $component-active-bg !default;
