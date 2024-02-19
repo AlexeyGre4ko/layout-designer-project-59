@@ -1,2 +1,5 @@
-{ "extends": [""]
+{
+    "color-no-hex": [true, {
+        "message": "Don't use hex colors like \"%s\""
+    }]
 }
