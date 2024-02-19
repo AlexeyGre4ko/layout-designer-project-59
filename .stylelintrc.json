@@ -1,5 +1,5 @@
 {
-    "color-no-hex": [true, {
-        "message": "Don't use hex colors like \"%s\""
-    }]
+    "rules": {
+        "color-no-invalid-hex": [true, { "reportDisables": true }]
+    }
 }
